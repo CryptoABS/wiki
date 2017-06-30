@@ -7,9 +7,10 @@
 
 ## 前端 ##
 
-1. 常遇到的前端與後端POST介接，明明後端已經開通CROS，卻還是無法使用xrmhttprequest拿到資料
+1. 常遇到的前端與後端`POST`介接，明明後端已經開通`CROS`，卻還是無法使用`XMLHttpRequest`拿到資料。
 
 ```javascript
+// 出現 No-Access-Control-Origin的時候，以下可能是一種解法
 記得使用JSON.stringify(params)將javascript object包裝成JSON，即便他已經是JSON object了。
 ```
 
